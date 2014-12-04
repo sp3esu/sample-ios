@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5E372AAAEBA4AEC8606ADE0C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB419569652D4FC94F87283F /* libPods.a */; };
+		B639103ABE78EC6DF3C2CF84 /* SampleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6391BBC5A30F2F5506277E2 /* SampleMapViewController.m */; };
+		B63912744F85BB5A7B4291F7 /* SampleCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6391820D5F44502F4F3340D /* SampleCalloutView.m */; };
+		B63912B4E45FBC8C7E11808F /* SampleMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6391DDD4715C45799871ABE /* SampleMapView.m */; };
+		B63912BE4271880DC3B70028 /* SampleAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6391814E2819C646A5F1D30 /* SampleAnnotationView.m */; };
+		B639145C368453D111D24001 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63913ABFE5F0A5E949E75B0 /* CoreLocation.framework */; };
+		B6391E40E8ECEB9823BABCAF /* SampleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B639101A8E29193E7E5A0E77 /* SampleAnnotation.m */; };
+		F5A721001A2F5B60005250AF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A720FF1A2F5B60005250AF /* MapKit.framework */; };
 		F5D65EFA1A2F3B520037B821 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D65EF91A2F3B520037B821 /* main.m */; };
 		F5D65EFD1A2F3B520037B821 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D65EFC1A2F3B520037B821 /* AppDelegate.m */; };
-		F5D65F001A2F3B520037B821 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D65EFF1A2F3B520037B821 /* ViewController.m */; };
 		F5D65F051A2F3B520037B821 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D65F041A2F3B520037B821 /* Images.xcassets */; };
 		F5D65F141A2F3B520037B821 /* sample_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D65F131A2F3B520037B821 /* sample_iosTests.m */; };
 /* End PBXBuildFile section */
@@ -27,15 +33,25 @@
 
 /* Begin PBXFileReference section */
 		A3E35A98B595694EEF78C306 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B639101A8E29193E7E5A0E77 /* SampleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleAnnotation.m; sourceTree = "<group>"; };
+		B6391150894DDF4212291A3F /* SampleMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleMapView.h; sourceTree = "<group>"; };
+		B63913ABFE5F0A5E949E75B0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B639166FEC7ED15B411048D4 /* SampleAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleAnnotationView.h; sourceTree = "<group>"; };
+		B6391814E2819C646A5F1D30 /* SampleAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleAnnotationView.m; sourceTree = "<group>"; };
+		B6391820D5F44502F4F3340D /* SampleCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleCalloutView.m; sourceTree = "<group>"; };
+		B63918E8BA3A553444C7735B /* SampleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleAnnotation.h; sourceTree = "<group>"; };
+		B6391BBC5A30F2F5506277E2 /* SampleMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleMapViewController.m; sourceTree = "<group>"; };
+		B6391DDD4715C45799871ABE /* SampleMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleMapView.m; sourceTree = "<group>"; };
+		B6391E78603FD5F68B863650 /* SampleMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleMapViewController.h; sourceTree = "<group>"; };
+		B6391F6D14997C8689C88CF5 /* SampleCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleCalloutView.h; sourceTree = "<group>"; };
 		CB419569652D4FC94F87283F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EEA6E5AD969D81507201DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F5A720FF1A2F5B60005250AF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F5D65EF41A2F3B520037B821 /* sample-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D65EF81A2F3B520037B821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5D65EF91A2F3B520037B821 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5D65EFB1A2F3B520037B821 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5D65EFC1A2F3B520037B821 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F5D65EFE1A2F3B520037B821 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F5D65EFF1A2F3B520037B821 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F5D65F041A2F3B520037B821 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F5D65F0D1A2F3B520037B821 /* sample-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sample-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D65F121A2F3B520037B821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +64,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E372AAAEBA4AEC8606ADE0C /* libPods.a in Frameworks */,
+				F5A721001A2F5B60005250AF /* MapKit.framework in Frameworks */,
+				B639145C368453D111D24001 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +82,9 @@
 		5F545A7CFF1C6351780BAEA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5A720FF1A2F5B60005250AF /* MapKit.framework */,
 				CB419569652D4FC94F87283F /* libPods.a */,
+				B63913ABFE5F0A5E949E75B0 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,6 +96,31 @@
 				A3E35A98B595694EEF78C306 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B63910156D7E8C13B445DB71 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B6391BBC5A30F2F5506277E2 /* SampleMapViewController.m */,
+				B6391E78603FD5F68B863650 /* SampleMapViewController.h */,
+				B6391DDD4715C45799871ABE /* SampleMapView.m */,
+				B6391150894DDF4212291A3F /* SampleMapView.h */,
+				B6391F09E0E4D5D351903BE9 /* Annotation */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		B6391F09E0E4D5D351903BE9 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				B639101A8E29193E7E5A0E77 /* SampleAnnotation.m */,
+				B6391814E2819C646A5F1D30 /* SampleAnnotationView.m */,
+				B639166FEC7ED15B411048D4 /* SampleAnnotationView.h */,
+				B63918E8BA3A553444C7735B /* SampleAnnotation.h */,
+				B6391820D5F44502F4F3340D /* SampleCalloutView.m */,
+				B6391F6D14997C8689C88CF5 /* SampleCalloutView.h */,
+			);
+			path = Annotation;
 			sourceTree = "<group>";
 		};
 		F5D65EEB1A2F3B520037B821 = {
@@ -103,10 +148,9 @@
 			children = (
 				F5D65EFB1A2F3B520037B821 /* AppDelegate.h */,
 				F5D65EFC1A2F3B520037B821 /* AppDelegate.m */,
-				F5D65EFE1A2F3B520037B821 /* ViewController.h */,
-				F5D65EFF1A2F3B520037B821 /* ViewController.m */,
 				F5D65F041A2F3B520037B821 /* Images.xcassets */,
 				F5D65EF71A2F3B520037B821 /* Supporting Files */,
+				B63910156D7E8C13B445DB71 /* Map */,
 			);
 			path = "sample-ios";
 			sourceTree = "<group>";
@@ -188,6 +232,11 @@
 				TargetAttributes = {
 					F5D65EF31A2F3B520037B821 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F5D65F0C1A2F3B520037B821 = {
 						CreatedOnToolsVersion = 6.1;
@@ -206,8 +255,6 @@
 			mainGroup = F5D65EEB1A2F3B520037B821;
 			productRefGroup = F5D65EF51A2F3B520037B821 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				F5D65EF31A2F3B520037B821 /* sample-ios */,
@@ -272,9 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5D65F001A2F3B520037B821 /* ViewController.m in Sources */,
 				F5D65EFD1A2F3B520037B821 /* AppDelegate.m in Sources */,
 				F5D65EFA1A2F3B520037B821 /* main.m in Sources */,
+				B639103ABE78EC6DF3C2CF84 /* SampleMapViewController.m in Sources */,
+				B63912B4E45FBC8C7E11808F /* SampleMapView.m in Sources */,
+				B6391E40E8ECEB9823BABCAF /* SampleAnnotation.m in Sources */,
+				B63912BE4271880DC3B70028 /* SampleAnnotationView.m in Sources */,
+				B63912744F85BB5A7B4291F7 /* SampleCalloutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +436,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
@@ -398,6 +450,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};

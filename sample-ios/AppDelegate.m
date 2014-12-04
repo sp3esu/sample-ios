@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "SampleMapViewController.h"
+#import "AFNetworkActivityIndicatorManager.h"
 
 @interface AppDelegate ()
+
+@property(nonatomic, strong) SampleMapViewController *sampleMapViewController;
 
 @end
 
@@ -16,13 +20,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
+    self.sampleMapViewController = [[SampleMapViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor redColor];
-    
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.sampleMapViewController;
     [self.window makeKeyAndVisible];
-    
+
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+
     return YES;
 }
 
