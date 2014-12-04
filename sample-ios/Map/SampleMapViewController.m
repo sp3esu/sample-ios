@@ -16,6 +16,9 @@
 @property(nonatomic, strong) SampleMapView *sampleMapView;
 @property(nonatomic, strong) CLLocationManager *locationManager;
 
+@property(nonatomic, strong) MKUserLocation *userLocation;
+@property(nonatomic, strong) SampleAnnotation *addedPoint;
+
 @end
 
 @implementation SampleMapViewController {
@@ -84,6 +87,9 @@
 - (void)addPoint:(NSDictionary *)pointData {
     SampleAnnotation *point = [[SampleAnnotation alloc] initWithDictionary:pointData];
     [self.sampleMapView.mapView addAnnotation:point];
+
+    self.addedPoint = point;
+    [self calculateLocation];
 }
 
 #pragma mark -
@@ -94,6 +100,9 @@
     userRegion.span.latitudeDelta = 0.5;
     userRegion.span.longitudeDelta = 0.5;
     [mapView setRegion:userRegion animated:YES];
+
+    self.userLocation = userLocation;
+    [self calculateLocation];
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
@@ -103,6 +112,18 @@
     }
 
     return nil;
+}
+
+#pragma mark -
+- (void)calculateLocation {
+    if (self.userLocation && self.addedPoint) {
+        CLLocationCoordinate2D addedPointCoordinate = self.addedPoint.coordinate;
+        CLLocation *addedPointLocation = [[CLLocation alloc] initWithLatitude:addedPointCoordinate.latitude
+                                                                    longitude:addedPointCoordinate.longitude];
+
+        CLLocationDistance distance = [self.userLocation.location distanceFromLocation:addedPointLocation];
+        self.userLocation.title = [NSString stringWithFormat:@"Dystans do punktu: %.2f m", distance];
+    }
 }
 
 @end
